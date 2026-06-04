@@ -3,17 +3,25 @@
     "builds": [
         {
             "src": "server.js",
-            "use": "@vercel/node",
-            "env": {
-                "PORT": 3000,
-                "MONGODB_URI": "mongodb://localhost:27017/importexport",
-                "JWT_SECRET": "your-secret-key",
-                "JWT_EXPIRES_IN": "1d",
-                "JWT_ISS": "importexport",
-                "JWT_AUD": "importexport",
-                "JWT_ALG": "HS256",
-                "JWT_TYP": "JWT"
-            }
+            "use": "@vercel/node"
         }
-    ]
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+        }
+    ],
+    "env": {
+        "MONGODB_URI": "@mongodb_uri",
+        "JWT_SECRET": "@jwt_secret",
+        "JWT_EXPIRES_IN": "1d",
+        "JWT_ISS": "jalagarment",
+        "JWT_AUD": "jalagarment",
+        "JWT_ALG": "HS256",
+        "JWT_TYP": "JWT",
+        "CLOUDINARY_NAME": "@cloudinary_name",
+        "CLOUDINARY_API_KEY": "@cloudinary_api_key",
+        "CLOUDINARY_API_SECRET": "@cloudinary_api_secret"
+    }
 }
