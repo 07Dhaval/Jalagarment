@@ -464,7 +464,7 @@
 }
 
 /* Premium Banner Section */
-.premium-banner-section {
+.premium-banner-sectionn {
     position: relative;
     height: 450px;
     background: #000;
@@ -474,7 +474,7 @@
     margin: 50px 0;
 }
 
-.premium-banner-section {
+.premium-banner-sectionn {
     position: relative;
     height: 420px;
     display: flex;
@@ -486,13 +486,13 @@
             rgba(0, 0, 0, 0.6) 50%,
             rgba(0, 0, 0, 0.2) 70%,
             rgba(0, 0, 0, 0.05) 100%),
-        url('/src/assets/banner-bg.png');
+        url('/public/assets/banner-bg.png');
     background-size: cover;
     background-position: right center;
     overflow: hidden;
 }
 
-.premium-banner-content {
+.premium-banner-contentt {
     position: relative;
     z-index: 2;
     max-width: 520px;
@@ -500,13 +500,13 @@
     color: #fff;
 }
 
-.premium-banner-content h2 {
+.premium-banner-contentt h2 {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.2;
 }
 
-.premium-banner-content p {
+.premium-banner-contentt p {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -514,7 +514,7 @@
     max-width: 500px;
 }
 
-.premium-banner-content .btn-view-collection {
+.premium-banner-contentt .btn-view-collection {
     background: #fff;
     color: #000;
     padding: 12px 25px;
@@ -571,17 +571,115 @@
         grid-template-columns: 1fr;
     }
 
-    .premium-banner-content h2 {
+    .premium-banner-contentt h2 {
         font-size: 2.5rem;
     }
 
-    .premium-banner-content {
+    .premium-banner-contentt {
         padding: 0 20px;
     }
 
-    .premium-banner-section {
+    .premium-banner-sectionn {
         height: auto;
         padding: 80px 0;
         background-position: center;
+    }
+}
+/* ===================================
+   REQUEST QUOTE SECTION
+=================================== */
+
+.quote-section {
+    background: #e9e6e2;
+    padding: 120px 0;
+}
+
+.quote-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.quote-header h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.quote-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.quote-form {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group select {
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #f2f2f5;
+    border-radius: 10px;
+    padding: 0 18px;
+    font-size: 16px;
+    color: #444;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.quote-btn {
+    grid-column: span 2;
+    height: 65px;
+    border: none;
+    border-radius: 10px;
+    background: #07142f;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.quote-btn:hover {
+    background: #0b1f47;
+}
+
+@media (max-width: 768px) {
+
+    .quote-section {
+        padding: 80px 20px;
+    }
+
+    .quote-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .quote-form {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-btn {
+        grid-column: span 1;
     }
 }

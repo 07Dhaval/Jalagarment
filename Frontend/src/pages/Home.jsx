@@ -51,24 +51,31 @@ const Home = () => {
   const products = [
     {
       id: 1,
-      name: "Premium Cotton Shirt",
-      category: "Men's Wear",
+      name: "Premium Navy Blazer",
+      category: "MEN",
       isFeatured: true,
       images: [{ url: "/assets/best-seller-1.png" }],
     },
     {
       id: 2,
-      name: "Designer Women Dress",
-      category: "Women's Wear",
+      name: "Silk Evening Gown",
+      category: "WOMEN",
       isFeatured: true,
-      images: [{ url: "/assets/best-seller-2.png" }],
+      images: [{ url: "/assets/best-seller-3.png" }],
     },
     {
       id: 3,
-      name: "Kids Party Dress",
-      category: "Kids Wear",
+      name: "Cotton Ruffle Dress",
+      category: "WOMEN",
       isFeatured: false,
-      images: [{ url: "/assets/best-seller-3.png" }],
+      images: [{ url: "/assets/best-seller-2.png" }],
+    },
+    {
+      id: 4,
+      name: "Executive Dress Shirt",
+      category: "MEN",
+      isFeatured: false,
+      images: [{ url: "/assets/best-seller-4.png" }],
     },
   ];
 
@@ -328,9 +335,9 @@ const Home = () => {
       </section>
 
       {/* Premium Export Quality Banner */}
-      <section className="premium-banner-section">
+      <section className="premium-banner-sectionn">
         <div className="container" style={{ margin: "0px 100px" }}>
-          <div className="premium-banner-content">
+          <div className="premium-banner-contentt">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -351,6 +358,58 @@ const Home = () => {
               </Link>
             </motion.div>
           </div>
+        </div>
+      </section>
+      {/* Request Quote Section */}
+      <section className="quote-section">
+        <div className="container">
+          <div className="quote-header">
+            <h2>Request a Quote</h2>
+            <p>
+              Fill out the form below and we'll get back to you within 24 hours
+            </p>
+          </div>
+
+          <form className="quote-form">
+            <div className="form-group">
+              <label>Company Name *</label>
+              <input type="text" placeholder="Your Company Name" />
+            </div>
+
+            <div className="form-group">
+              <label>Country *</label>
+              <input type="text" placeholder="Your Country" />
+            </div>
+
+            <div className="form-group">
+              <label>Product Interest *</label>
+              <select>
+                <option>Select Product Category</option>
+                <option>Men's Wear</option>
+                <option>Women's Wear</option>
+                <option>Kids Wear</option>
+              </select>
+            </div>
+
+            <div className="form-group">
+              <label>Quantity Requirement *</label>
+              <input type="text" placeholder="e.g., 500 pieces" />
+            </div>
+
+            <div className="form-group">
+              <label>WhatsApp Number *</label>
+              <input type="text" placeholder="+91 XXXXX XXXXX" />
+            </div>
+
+            <div className="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="your@email.com" />
+            </div>
+
+            <button type="submit" className="quote-btn">
+              Send Inquiry
+            </button>
+          </form>
         </div>
       </section>
     </motion.div>

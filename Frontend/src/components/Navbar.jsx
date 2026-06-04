@@ -42,7 +42,7 @@ const Navbar = () => {
                 </div>
             </nav>
             <div className="announcement-bar">
-                <p>Summer is here get ready! • Free shipping on international orders</p>
+                {/* <p> Summer is here get ready! • Free shipping on international orders</p> */}
             </div>
         </header>
     );
