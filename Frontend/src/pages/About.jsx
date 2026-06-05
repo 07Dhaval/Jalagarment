@@ -15,7 +15,7 @@ import {
   BadgeCheck,
   Ship,
   Scissors,
-  BadgeDollarSign
+  BadgeDollarSign,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -199,38 +199,38 @@ const About = () => {
       desc: "We prioritize building lasting relationships based on trust, consistency and quality.",
     },
   ];
-const whyIndia = [
-  {
-    icon: <Award size={28} />,
-    title: "Quality Textile Heritage",
-    desc: "Centuries-old textile tradition with world-class cotton production and modern denim manufacturing expertise.",
-  },
-  {
-    icon: <BadgeDollarSign size={28} />,
-    title: "Cost-Effective",
-    desc: "Competitive manufacturing costs and economies of scale without compromising on quality standards.",
-  },
-  {
-    icon: <Box size={28} />,
-    title: "Flexible Manufacturing",
-    desc: "Capabilities for both large-scale bulk orders and smaller customized batches with quick turnarounds.",
-  },
-  {
-    icon: <ShieldCheck size={28} />,
-    title: "Global Compliance",
-    desc: "Adherence to international standards including OEKO-TEX, GOTS, and ISO certifications.",
-  },
-  {
-    icon: <CheckCircle size={28} />,
-    title: "Sustainable Practices",
-    desc: "Growing focus on eco-friendly production, organic cotton, and sustainable dyeing processes.",
-  },
-  {
-    icon: <TrendingUp size={28} />,
-    title: "Design Innovation",
-    desc: "Access to trend forecasters developing contemporary styles for international markets.",
-  },
-];
+  const whyIndia = [
+    {
+      icon: <Award size={28} />,
+      title: "Quality Textile Heritage",
+      desc: "Centuries-old textile tradition with world-class cotton production and modern denim manufacturing expertise.",
+    },
+    {
+      icon: <BadgeDollarSign size={28} />,
+      title: "Cost-Effective",
+      desc: "Competitive manufacturing costs and economies of scale without compromising on quality standards.",
+    },
+    {
+      icon: <Box size={28} />,
+      title: "Flexible Manufacturing",
+      desc: "Capabilities for both large-scale bulk orders and smaller customized batches with quick turnarounds.",
+    },
+    {
+      icon: <ShieldCheck size={28} />,
+      title: "Global Compliance",
+      desc: "Adherence to international standards including OEKO-TEX, GOTS, and ISO certifications.",
+    },
+    {
+      icon: <CheckCircle size={28} />,
+      title: "Sustainable Practices",
+      desc: "Growing focus on eco-friendly production, organic cotton, and sustainable dyeing processes.",
+    },
+    {
+      icon: <TrendingUp size={28} />,
+      title: "Design Innovation",
+      desc: "Access to trend forecasters developing contemporary styles for international markets.",
+    },
+  ];
   return (
     <motion.div
       className="about-page"
@@ -241,144 +241,122 @@ const whyIndia = [
     >
       {/* Hero Section */}
       <section className="about-hero-new">
-  <div className="hero-overlay"></div>
+        <div className="hero-overlay"></div>
 
-  <div className="container">
+        <div className="container">
+          <motion.div
+            className="about-hero-content"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="hero-badge">TRUSTED MERCHANT EXPORTER</span>
 
-    <motion.div
-      className="about-hero-content"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
+            <h1>
+              About <span>JALA</span> GARMENT
+            </h1>
 
-      <span className="hero-badge">
-        TRUSTED MERCHANT EXPORTER
-      </span>
-
-      <h1>
-        About <span>JALA</span> GARMENT
-      </h1>
-
-      <p className="hero-subtitle-new">
-        Leading merchant exporter of premium denim products from India,
-        bridging the gap between quality manufacturing and global market
-        demands.
-      </p>
-
-    </motion.div>
-
-  </div>
-</section>
+            <p className="hero-subtitle-new">
+              Leading merchant exporter of premium denim products from India,
+              bridging the gap between quality manufacturing and global market
+              demands.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Company Story Section */}
       <section className="company-story-section">
-  <div className="container">
+        <div className="container">
+          <div className="story-card">
+            <div className="story-image">
+              <img
+                src="/public/assets/women-category.png"
+                alt="women-category"
+              />
+            </div>
 
-    <div className="story-card">
+            <div className="story-content">
+              <h2>Crafting Excellence Since 2010</h2>
 
-      <div className="story-image">
-        <img
-          src="/public/assets/women-category.png"
-          alt="women-category"
-        />
-      </div>
+              <p>
+                JALA GARMENT is a premier Merchant Exporter from India,
+                specializing in high-quality denim products for international
+                markets.
+              </p>
 
-      <div className="story-content">
+              <p>
+                We export Men's, Women's & Kids' Denim Wear to clients across
+                Japan, UAE, and Europe, providing OEM & Private Label
+                Manufacturing services with custom branding options.
+              </p>
 
-        <h2>Crafting Excellence Since 2010</h2>
+              <p>
+                With over 14 years of export experience, we have built a
+                reputation for quality, reliability, and competitive pricing in
+                the global denim market.
+              </p>
 
-        <p>
-          JALA GARMENT is a premier Merchant Exporter from India,
-          specializing in high-quality denim products for
-          international markets.
-        </p>
+              <div className="story-features">
+                <div className="feature-box">
+                  <div className="feature-icon">✓</div>
+                  <div>
+                    <h4>Merchant Exporter from India</h4>
+                    <span>
+                      Connecting international buyers with quality Indian
+                      manufacturers
+                    </span>
+                  </div>
+                </div>
 
-        <p>
-          We export Men's, Women's & Kids' Denim Wear to clients
-          across Japan, UAE, and Europe, providing OEM &
-          Private Label Manufacturing services with custom
-          branding options.
-        </p>
+                <div className="feature-box">
+                  <div className="feature-icon">✓</div>
+                  <div>
+                    <h4>OEM & Private Label Manufacturing</h4>
+                    <span>Complete customization with your brand identity</span>
+                  </div>
+                </div>
 
-        <p>
-          With over 14 years of export experience, we have built
-          a reputation for quality, reliability, and competitive
-          pricing in the global denim market.
-        </p>
-
-        <div className="story-features">
-
-          <div className="feature-box">
-            <div className="feature-icon">✓</div>
-            <div>
-              <h4>Merchant Exporter from India</h4>
-              <span>
-                Connecting international buyers with quality Indian manufacturers
-              </span>
+                <div className="feature-box">
+                  <div className="feature-icon">✓</div>
+                  <div>
+                    <h4>Export Focus: Japan, UAE & Europe</h4>
+                    <span>Specialized understanding of these key markets</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div className="feature-box">
-            <div className="feature-icon">✓</div>
-            <div>
-              <h4>OEM & Private Label Manufacturing</h4>
-              <span>
-                Complete customization with your brand identity
-              </span>
-            </div>
-          </div>
-
-          <div className="feature-box">
-            <div className="feature-icon">✓</div>
-            <div>
-              <h4>Export Focus: Japan, UAE & Europe</h4>
-              <span>
-                Specialized understanding of these key markets
-              </span>
-            </div>
-          </div>
-
         </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* Company Statistics */}
-<section className="about-stats-section">
-    <div className="container">
-
-        <div className="about-stats-grid">
-
+      <section className="about-stats-section">
+        <div className="container">
+          <div className="about-stats-grid">
             <div className="about-stat-item">
-                <h3>
-    <CountUp end={14} duration={3} />+
-</h3>
-                <span>YEARS OF EXPORT</span>
+              <h3>
+                <CountUp end={14} duration={3} />+
+              </h3>
+              <span>YEARS OF EXPORT</span>
             </div>
 
             <div className="about-stat-item">
-                <h3>
-    <CountUp end={500} duration={3} />+
-</h3>
-                <span>GLOBAL CLIENTS</span>
+              <h3>
+                <CountUp end={500} duration={3} />+
+              </h3>
+              <span>GLOBAL CLIENTS</span>
             </div>
 
             <div className="about-stat-item">
-                <h3>
-    <CountUp end={25} duration={3} />+
-</h3>
-                <span>COUNTRIES SERVED</span>
+              <h3>
+                <CountUp end={25} duration={3} />+
+              </h3>
+              <span>COUNTRIES SERVED</span>
             </div>
-
+          </div>
         </div>
-
-    </div>
-</section>
+      </section>
 
       {/* Official Documentation Section */}
       {/* <section className="official-docs-section section-padding">
@@ -490,41 +468,37 @@ const whyIndia = [
         </div>
       </section> */}
       <section className="why-india-section">
-  <div className="container">
+        <div className="container">
+          <div className="why-india-header">
+            <h2>Why Buy Denim From India?</h2>
 
-    <div className="why-india-header">
-      <h2>Why Buy Denim From India?</h2>
-
-      <p>
-        India combines a rich textile heritage with modern technology
-        to deliver world-class denim products at competitive prices.
-      </p>
-    </div>
-
-    <div className="why-india-grid">
-      {whyIndia.map((item, index) => (
-        <motion.div
-          key={index}
-          className="why-india-card"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: index * 0.08 }}
-        >
-          <div className="why-india-icon">
-            {item.icon}
+            <p>
+              India combines a rich textile heritage with modern technology to
+              deliver world-class denim products at competitive prices.
+            </p>
           </div>
 
-          <h3>{item.title}</h3>
+          <div className="why-india-grid">
+            {whyIndia.map((item, index) => (
+              <motion.div
+                key={index}
+                className="why-india-card"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.08 }}
+              >
+                <div className="why-india-icon">{item.icon}</div>
 
-          <p>{item.desc}</p>
-        </motion.div>
-      ))}
-    </div>
+                <h3>{item.title}</h3>
 
-  </div>
-</section>
-      
+                <p>{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="manufacturing-network-section">
         <div className="manufacturing-overlay">
           <div className="container">

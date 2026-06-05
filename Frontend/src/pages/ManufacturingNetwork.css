@@ -1,0 +1,258 @@
+.manufacturing-page {
+    background: #fff;
+    padding-top: 120px;
+}
+
+/* HERO */
+
+.manufacturing-hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.manufacturing-hero h1 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.manufacturing-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* FEATURES */
+.manufacturing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.manufacturing-item {
+    text-align: center;
+}
+
+.manufacturing-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #89d4f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: #111;
+}
+
+.manufacturing-icon svg {
+    width: 36px;
+    height: 36px;
+    stroke-width: 2;
+}
+
+.manufacturing-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.manufacturing-item p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .manufacturing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .manufacturing-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .manufacturing-icon {
+        width: 85px;
+        height: 85px;
+    }
+
+    .manufacturing-item h3 {
+        font-size: 18px;
+    }
+
+    .manufacturing-item p {
+        font-size: 15px;
+    }
+}
+.manufacturing-features {
+    padding: 50px 0;
+}
+
+.manufacturing-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.manufacturing-card {
+    text-align: center;
+}
+
+.manufacturing-icon {
+    width: 90px;
+    height: 90px;
+    background: #87d6f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: #111;
+}
+
+.manufacturing-card h3 {
+    font-size: 20px;
+    margin-bottom: 1px;
+    color: #111;
+    text-align: center;
+}
+
+.manufacturing-card p {
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* PROCESS */
+
+.manufacturing-process {
+    padding: 30px 0 70px;
+}
+
+.process-box {
+    background: #f1efeb;
+    padding: 70px;
+    border-radius: 8px;
+}
+
+.process-box h2 {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.process-box p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    color: #444;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* PREMIUM */
+
+.premium-banner {
+    max-width: 1400px;
+    height: 400px;
+    margin: 0 auto 80px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.3)
+      ),
+      url("/assets/banner-bg.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.premium-content {
+    max-width: 600px;
+    padding-left: 80px;
+}
+
+.premium-content h2 {
+    color: #fff;
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.premium-content p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.banner-btn {
+    background: #fff;
+    color: #111;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media(max-width:992px){
+
+    .manufacturing-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-box{
+        padding:40px;
+    }
+
+    .process-box h2{
+        font-size:38px;
+    }
+
+    .premium-content h2{
+        font-size:48px;
+    }
+}
+
+@media(max-width:768px){
+
+    .manufacturing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .manufacturing-hero h1{
+        font-size:42px;
+    }
+
+    .premium-content{
+        padding:30px;
+    }
+
+    .premium-content h2{
+        font-size:38px;
+    }
+
+    .premium-content p{
+        font-size:16px;
+    }
+}

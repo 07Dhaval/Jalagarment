@@ -1,0 +1,241 @@
+.certifications-page {
+    padding-top: 90px;
+    background: #f8f8f8;
+}
+
+/* HERO */
+
+.cert-hero {
+    background: #07112b;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cert-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.cert-hero h1 {
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cert-hero h1 span {
+    color: #7dd3fc;
+}
+
+.cert-hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    opacity: .85;
+}
+
+/* GRID */
+
+.cert-section {
+    padding: 80px 0;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.cert-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.cert-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cert-icon {
+    color: #223f97;
+}
+
+.verified {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #16a34a;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cert-subtitle {
+    display: block;
+    color: #6b7280;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.cert-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cert-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* REQUEST */
+
+.request-section {
+    padding-bottom: 80px;
+}
+
+.request-box {
+    background:
+    linear-gradient(
+      135deg,
+      rgba(34,63,151,.95),
+      rgba(61,130,255,.85)
+    ),
+    url("/assets/pattern.png");
+
+    border-radius: 14px;
+
+    padding: 50px;
+
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request-box h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.request-box p {
+    max-width: 500px;
+    opacity: .9;
+}
+
+.request-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.email-btn,
+.whatsapp-btn {
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.email-btn {
+    background: #fff;
+    color: #111;
+}
+
+.whatsapp-btn {
+    color: #27c467;
+    background: #e6f4ea;
+    font-weight: 900;
+    border: 3px solid #27c467;
+}
+
+/* PREMIUM */
+
+.premium-banner {
+    max-width: 1400px;
+    height: 380px;
+    margin: 0 auto 80px;
+
+    background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.92),
+      rgba(0,0,0,.25)
+    ),
+    url("/assets/banner-bg.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.premium-content {
+    max-width: 600px;
+    padding-left: 70px;
+}
+
+.premium-content h2 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.premium-content p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.banner-btn {
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .cert-grid{
+        grid-template-columns:1fr;
+    }
+
+    .request-box{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+}
+
+@media(max-width:768px){
+
+    .cert-hero h1{
+        font-size:42px;
+    }
+
+    .premium-content{
+        padding:30px;
+    }
+
+    .premium-content h2{
+        font-size:42px;
+    }
+
+    .premium-content p{
+        font-size:16px;
+    }
+}

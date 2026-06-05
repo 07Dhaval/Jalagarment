@@ -8,12 +8,14 @@ import Catalog from './pages/Catalog';
 import ProductDetail from './pages/ProductDetail';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
-import Markets from './pages/Markets';
+import ManufacturingNetwork from './pages/ManufacturingNetwork';
+import Certifications from './pages/Certifications';
+import Downloads from './pages/Downloads';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
-
+import ExportServices from './pages/ExportServices';
 function AppContent() {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith('/admin') ||
@@ -29,7 +31,10 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/markets" element={<Markets />} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/export-services" element={<ExportServices />} />
+            <Route path="/manufacturing-network" element={<ManufacturingNetwork />} />
+            <Route path="/downloads" element={<Downloads />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/jala-admin-portal-2025" element={<Login />} />
