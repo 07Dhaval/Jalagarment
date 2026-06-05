@@ -27,50 +27,51 @@
 
 /* FEATURES */
 .manufacturing-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
-    margin-top: 50px;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(220px, 1fr)) !important;
+    gap: 40px;
+    align-items: start;
+    justify-items: center;
+    width: 100%;
 }
 
 .manufacturing-item {
+    width: 100%;
     text-align: center;
 }
 
 .manufacturing-icon {
-    width: 96px;
-    height: 96px;
+    width: 330px;
+    height: 130px;
     border-radius: 50%;
     background: #89d4f5;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 25px;
+    margin: 0 auto 30px;
     color: #111;
 }
 
 .manufacturing-icon svg {
-    width: 36px;
-    height: 36px;
+    width: 60px;
+    height: 60px;
     stroke-width: 2;
 }
 
 .manufacturing-item h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    color: #111;
     margin-bottom: 12px;
-    line-height: 1.3;
+    text-transform: uppercase;
 }
 
 .manufacturing-item p {
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 15px;
     color: #666;
-    max-width: 260px;
+    line-height: 1.7;
+    max-width: 240px;
     margin: 0 auto;
 }
-
 /* Tablet */
 @media (max-width: 992px) {
     .manufacturing-grid {

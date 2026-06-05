@@ -13,22 +13,22 @@ import {
 
 const features = [
   {
-    icon: <Factory />,
+    icon: <Factory size={55} />,
     title: "Factory Audits",
     desc: "Regular verification of manufacturing facilities"
   },
   {
-    icon: <Eye />,
+    icon: <Eye size={55} />,
     title: "Production Monitoring",
     desc: "Continuous oversight of manufacturing process"
   },
   {
-    icon: <Check />,
+    icon: <Check size={55} />,
     title: "Quality Inspection",
     desc: "Strict quality control at every stage"
   },
   {
-    icon: <FileText />,
+    icon: <FileText size={55} />,
     title: "Export Documentation",
     desc: "Complete paperwork management"
   }
@@ -55,22 +55,25 @@ export default function ManufacturingNetwork() {
 
       {/* FEATURES */}
 
-      <section className="manufacturing-features">
-        <div className="manufacturing-grid">
-  {features.map((item, index) => (
-    <div className="manufacturing-item" key={index}>
-      <div className="manufacturing-icon">
-        {item.icon}
-      </div>
+    <section className="manufacturing-features">
+  <div className="container">
 
-      <h3>{item.title}</h3>
+    <div className="manufacturing-grid">
+      {features.map((item, index) => (
+        <div className="manufacturing-item" key={index}>
+          <div className="manufacturing-icon">
+            {item.icon}
+          </div>
 
-      <p>{item.desc}</p>
+          <h3>{item.title}</h3>
+
+          <p>{item.desc}</p>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-      </section>
 
+  </div>
+</section>
       {/* PROCESS */}
 
       <section className="manufacturing-process">
