@@ -232,7 +232,139 @@
     font-size: 0.65rem;
   }
 }
+/* ==========================
+   IPHONE 13 MINI & MOBILE
+   ONLY RESPONSIVE FIXES
+========================== */
 
+@media screen and (max-width: 768px) {
+
+  .hero-section {
+    min-height: auto;
+    padding-top: 140px;
+  }
+
+  .hero-container {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  .hero-subtitlee {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    word-break: break-word;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 0 10px;
+    margin-bottom: 25px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-view-collection,
+  .btn-contact-us {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  /* STATS FIX */
+
+  .hero-stats-bar {
+    position: relative;
+    padding: 30px 15px;
+  }
+
+  .stats-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .stat-box {
+    width: 100%;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+/* iPhone 13 Mini (375px) */
+
+@media screen and (max-width: 390px) {
+
+  .hero-section {
+    padding-top: 130px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitlee {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .stats-container {
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .btn-view-collection,
+  .btn-contact-us {
+    max-width: 240px;
+    padding: 14px 20px;
+  }
+}
+
+/* Small Android */
+
+@media screen and (max-width: 360px) {
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+}
 /* Trust Badges Bar */
 .trust-badges-bar {
   background: #fcfbf9;
