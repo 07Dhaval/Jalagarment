@@ -236,31 +236,31 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="premium-banner-sectionn">
-        <div className="container" style={{ margin: "0px 100px" }}>
-          <div className="premium-banner-contentt">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2>
-                Premium Export
-                <br />
-                Quality
-              </h2>
-              <p>
-                Serving international markets with quality garments since 2010.
-                Trusted by 500+ clients across 25+ countries.
-              </p>
-              <Link to="/catalog" className="btn-view-collection">
-                VIEW COLLECTION
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <section className="premium-banner-section">
+                    <div className="container" style={{ margin: "0px 100px" }}>
+                      <div className="premium-banner-contentt">
+                        <motion.div
+                          initial={{ opacity: 0, x: -50 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8 }}
+                        >
+                          <h2>
+                            Premium Export
+                            <br />
+                            Quality
+                          </h2>
+                          <p>
+                            Serving international markets with quality garments since 2010.
+                            Trusted by 500+ clients across 25+ countries.
+                          </p>
+                          <Link to="/catalog" className="btn-view-collection">
+                            VIEW COLLECTION
+                          </Link>
+                        </motion.div>
+                      </div>
+                    </div>
+                  </section>
     </motion.div>
   );
 };

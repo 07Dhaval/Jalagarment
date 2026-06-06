@@ -335,7 +335,7 @@ const Home = () => {
       </section>
 
       {/* Premium Export Quality Banner */}
-      <section className="premium-banner-sectionn">
+      <section className="premium-banner-section">
               <div className="container" style={{ margin: "0px 100px" }}>
                 <div className="premium-banner-contentt">
                   <motion.div

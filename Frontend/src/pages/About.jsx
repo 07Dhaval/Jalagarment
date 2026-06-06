@@ -199,6 +199,7 @@ const About = () => {
       desc: "We prioritize building lasting relationships based on trust, consistency and quality.",
     },
   ];
+
   const whyIndia = [
     {
       icon: <Award size={28} />,
@@ -231,6 +232,7 @@ const About = () => {
       desc: "Access to trend forecasters developing contemporary styles for international markets.",
     },
   ];
+
   return (
     <motion.div
       className="about-page"
@@ -242,7 +244,6 @@ const About = () => {
       {/* Hero Section */}
       <section className="about-hero-new">
         <div className="hero-overlay"></div>
-
         <div className="container">
           <motion.div
             className="about-hero-content"
@@ -251,11 +252,9 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="hero-badge">TRUSTED MERCHANT EXPORTER</span>
-
             <h1>
               About <span>JALA</span> GARMENT
             </h1>
-
             <p className="hero-subtitle-new">
               Leading merchant exporter of premium denim products from India,
               bridging the gap between quality manufacturing and global market
@@ -270,45 +269,33 @@ const About = () => {
         <div className="container">
           <div className="story-card">
             <div className="story-image">
-              <img
-                src="/public/assets/women-category.png"
-                alt="women-category"
-              />
+              <img src="/assets/women-category.png" alt="women-category" />
             </div>
-
             <div className="story-content">
               <h2>Crafting Excellence Since 2010</h2>
-
               <p>
                 JALA GARMENT is a premier Merchant Exporter from India,
                 specializing in high-quality denim products for international
                 markets.
               </p>
-
               <p>
                 We export Men's, Women's & Kids' Denim Wear to clients across
                 Japan, UAE, and Europe, providing OEM & Private Label
                 Manufacturing services with custom branding options.
               </p>
-
               <p>
                 With over 14 years of export experience, we have built a
                 reputation for quality, reliability, and competitive pricing in
                 the global denim market.
               </p>
-
               <div className="story-features">
                 <div className="feature-box">
                   <div className="feature-icon">✓</div>
                   <div>
                     <h4>Merchant Exporter from India</h4>
-                    <span>
-                      Connecting international buyers with quality Indian
-                      manufacturers
-                    </span>
+                    <span>Connecting international buyers with quality Indian manufacturers</span>
                   </div>
                 </div>
-
                 <div className="feature-box">
                   <div className="feature-icon">✓</div>
                   <div>
@@ -316,7 +303,6 @@ const About = () => {
                     <span>Complete customization with your brand identity</span>
                   </div>
                 </div>
-
                 <div className="feature-box">
                   <div className="feature-icon">✓</div>
                   <div>
@@ -335,149 +321,31 @@ const About = () => {
         <div className="container">
           <div className="about-stats-grid">
             <div className="about-stat-item">
-              <h3>
-                <CountUp end={14} duration={3} />+
-              </h3>
+              <h3><CountUp end={14} duration={3} />+</h3>
               <span>YEARS OF EXPORT</span>
             </div>
-
             <div className="about-stat-item">
-              <h3>
-                <CountUp end={500} duration={3} />+
-              </h3>
+              <h3><CountUp end={500} duration={3} />+</h3>
               <span>GLOBAL CLIENTS</span>
             </div>
-
             <div className="about-stat-item">
-              <h3>
-                <CountUp end={25} duration={3} />+
-              </h3>
+              <h3><CountUp end={25} duration={3} />+</h3>
               <span>COUNTRIES SERVED</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Official Documentation Section */}
-      {/* <section className="official-docs-section section-padding">
-        <div className="container">
-          <div className="section-header-centered">
-            <span className="subtitle">OFFICIAL CLEARANCE</span>
-            <h2>Verification & Compliance</h2>
-            <p>
-              We operate with full governmental transparency and international
-              trade adherence.
-            </p>
-          </div>
-
-          <div className="official-certs-grid">
-            {officialCertificates.map((cert, index) => (
-              <motion.div
-                key={index}
-                className="official-cert-card glass-card"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-              >
-                <div className="official-cert-img">
-                  <img src={cert.img} alt={cert.title} />
-                  <div className="img-overlay">
-                    <Link to={cert.img} target="_blank" className="view-btn">
-                      View Original
-                    </Link>
-                  </div>
-                </div>
-                <div className="official-cert-info">
-                  <h3>{cert.title}</h3>
-                  <p>{cert.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Industry Standards Section */}
-      {/* <section className="certifications-section section-padding">
-        <div className="container">
-          <div className="section-header-centered">
-            <span className="subtitle">TRUSTED QUALITY</span>
-            <h2>Industry Certifications</h2>
-            <p>
-              Our commitment to excellence is backed by globally recognized
-              certifications.
-            </p>
-          </div>
-
-          <div className="certifications-grid">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={index}
-                className="cert-card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="cert-icon">{cert.icon}</div>
-                <h3>{cert.title}</h3>
-                <p>{cert.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Markets We Serve Section */}
-      {/* <section className="markets-section-new">
-        <div className="container">
-          <div className="markets-header-new">
-            <div className="global-tag">
-              <Globe size={20} />
-              <span>GLOBAL REACH</span>
-            </div>
-            <h2>Markets We Serve</h2>
-            <p>
-              Delivering premium textile exports to clients across the globe
-            </p>
-          </div>
-
-          <div className="markets-grid-new">
-            {markets.map((market, index) => (
-              <motion.div
-                key={index}
-                className="market-card-new"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-              >
-                <span className="market-code">{market.code}</span>
-                <span className="market-name">{market.name}</span>
-                <span className="market-region">{market.region}</span>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="markets-footer-new">
-            <p>
-              And many more countries across <span>25+ nations</span> worldwide
-            </p>
-          </div>
-        </div>
-      </section> */}
+      {/* Why Buy Denim From India */}
       <section className="why-india-section">
         <div className="container">
           <div className="why-india-header">
             <h2>Why Buy Denim From India?</h2>
-
             <p>
               India combines a rich textile heritage with modern technology to
               deliver world-class denim products at competitive prices.
             </p>
           </div>
-
           <div className="why-india-grid">
             {whyIndia.map((item, index) => (
               <motion.div
@@ -489,9 +357,7 @@ const About = () => {
                 transition={{ delay: index * 0.08 }}
               >
                 <div className="why-india-icon">{item.icon}</div>
-
                 <h3>{item.title}</h3>
-
                 <p>{item.desc}</p>
               </motion.div>
             ))}
@@ -499,79 +365,72 @@ const About = () => {
         </div>
       </section>
 
+      {/* Manufacturing Network */}
       <section className="manufacturing-network-section">
-        <div className="manufacturing-overlay">
-          <div className="container">
-            <div className="manufacturing-header">
-              <h2>Our Manufacturing Network</h2>
+        <div className="container">
+          <div className="manufacturing-header">
+            <h2>Our Manufacturing Network</h2>
+            <p>
+              JALA GARMENT has established strategic partnerships with India's
+              leading garment manufacturers across major textile hubs
+            </p>
+          </div>
 
-              <p>
-                JALA GARMENT has established strategic partnerships with India's
-                leading garment manufacturers across major textile hubs
-              </p>
+          <div className="manufacturing-gridd">
+            {manufacturingHubs.map((hub, index) => (
+              <motion.div
+                key={index}
+                className="manufacturing-card"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <div className="manufacturing-card-title">
+                  <MapPin size={22} />
+                  <span>{hub.title}</span>
+                </div>
+                <p>{hub.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="manufacturing-divider"></div>
+
+          <div className="manufacturing-stats">
+            <div className="mfg-stat-item">
+              <h4>50+</h4>
+              <span>PARTNER FACTORIES</span>
             </div>
-
-            <div className="manufacturing-grid">
-              {manufacturingHubs.map((hub, index) => (
-                <motion.div
-                  key={index}
-                  className="manufacturing-card"
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <h3>
-                    <MapPin size={22} />
-                    {hub.title}
-                  </h3>
-
-                  <p>{hub.desc}</p>
-                </motion.div>
-              ))}
+            <div className="mfg-stat-divider"></div>
+            <div className="mfg-stat-item">
+              <h4>100K+</h4>
+              <span>MONTHLY CAPACITY</span>
             </div>
-            <div className="manufacturing-divider"></div>
-            <div className="manufacturing-stats">
-              <div className="stat-item">
-                <h4>50+</h4>
-                <span>PARTNER FACTORIES</span>
-              </div>
-
-              <div className="divider"></div>
-
-              <div className="stat-item">
-                <h4>100K+</h4>
-                <span>MONTHLY CAPACITY</span>
-              </div>
-
-              <div className="divider"></div>
-
-              <div className="stat-item">
-                <h4>ISO 9001</h4>
-                <span>QUALITY CERTIFIED</span>
-              </div>
-
-              <div className="divider"></div>
-
-              <div className="stat-item">
-                <h4>4-6 Wks</h4>
-                <span>AVERAGE LEAD TIME</span>
-              </div>
+            <div className="mfg-stat-divider"></div>
+            <div className="mfg-stat-item">
+              <h4>ISO 9001</h4>
+              <span>QUALITY CERTIFIED</span>
+            </div>
+            <div className="mfg-stat-divider"></div>
+            <div className="mfg-stat-item">
+              <h4>4-6 Wks</h4>
+              <span>AVERAGE LEAD TIME</span>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Complete Export Services */}
       <section className="export-services-section">
         <div className="container">
           <div className="export-services-header">
             <h2>Complete Export Services</h2>
-
             <p>
               End-to-end export solutions covering every aspect of international
               garment trade, ensuring a seamless experience for our buyers.
             </p>
           </div>
-
           <div className="export-services-grid">
             {exportServices.map((service, index) => (
               <motion.div
@@ -583,9 +442,7 @@ const About = () => {
                 transition={{ delay: index * 0.1 }}
               >
                 <div className="service-icon">{service.icon}</div>
-
                 <h3>{service.title}</h3>
-
                 <ul>
                   {service.points.map((point, i) => (
                     <li key={i}>{point}</li>
@@ -596,6 +453,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       {/* Premium Export Quality Banner */}
       <section className="premium-banner-about">
         <div className="container">
@@ -623,13 +481,13 @@ const About = () => {
           </div>
         </div>
       </section>
+
       {/* Why Work With JALA GARMENT */}
       <section className="why-jala-section">
         <div className="container">
           <div className="why-jala-header">
             <h2>Why Work With JALA GARMENT?</h2>
           </div>
-
           <div className="why-jala-grid">
             {whyChooseUs.map((item, index) => (
               <motion.div
@@ -641,31 +499,27 @@ const About = () => {
                 transition={{ delay: index * 0.1 }}
               >
                 <div className="why-icon">{item.icon}</div>
-
                 <h3>{item.title}</h3>
-
                 <p>{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
       {/* Ready To Source CTA */}
       <section className="source-section">
         <div className="source-bg">
           <div className="source-card">
             <h2>Ready to Source from India?</h2>
-
             <p>
               Partner with JALA GARMENT for reliable, high-quality, and
               cost-effective garment export solutions.
             </p>
-
             <div className="source-buttons">
               <Link to="/contact" className="source-btn-white">
                 Contact Us Today
               </Link>
-
               <a
                 href="https://wa.me/919714092106"
                 target="_blank"

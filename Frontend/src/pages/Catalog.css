@@ -175,7 +175,7 @@
             rgba(0,0,0,0.45) 60%,
             rgba(0,0,0,0.15) 100%
         ),
-        url("/assets/banner-bg.png");
+        url("src/assets/banner-bg.png");
 
     background-size: cover;
     background-position: center;
