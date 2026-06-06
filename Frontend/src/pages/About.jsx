@@ -667,7 +667,7 @@ const About = () => {
               </Link>
 
               <a
-                href="https://wa.me/9197140 92106"
+                href="https://wa.me/919714092106"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="source-btn-green"

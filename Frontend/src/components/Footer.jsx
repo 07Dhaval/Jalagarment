@@ -61,9 +61,11 @@ const Footer = () => {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/products">Garment Products</Link></li>
-              <li><Link to="/markets">Global Markets</Link></li>
-              <li><Link to="/services">Export Services</Link></li>
+              <li><Link to="/catalog">Products</Link></li>
+              <li><Link to="/export-services">Export Services</Link></li>
+              <li><Link to="/manufacturing-network">Manufacturing Network</Link></li>
+              <li><Link to="/certifications">Certifications</Link></li>
+              <li><Link to="/downloads">Downloads</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -121,7 +123,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} Jalagarment. All rights reserved.
+            © {new Date().getFullYear()} Jalagarment. All rights reserved | Developed by <a href="https://www.exoticinfotech.com" target="_blank" rel="noopener noreferrer">ExoticInfoTech</a>
+                        
           </p>
 
           <div className="footer-links">

@@ -21,11 +21,7 @@ const Navbar = () => {
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
-      <div className="announcement-bar">
-        <p>
-          Summer is here get ready! • Free shipping on international orders
-        </p>
-      </div>
+      
 
       <nav className="navbar">
         <div className="container nav-container">
@@ -67,6 +63,11 @@ const Navbar = () => {
         <Link to="/certifications" onClick={closeMenu}>CERTIFICATIONS</Link>
         <Link to="/downloads" onClick={closeMenu}>DOWNLOADS</Link>
         <Link to="/contact" onClick={closeMenu}>CONTACT</Link>
+      </div>
+      <div className="announcement-bar">
+        <p>
+          Summer is here get ready! • Free shipping on international orders
+        </p>
       </div>
     </header>
   );

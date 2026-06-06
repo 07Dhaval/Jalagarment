@@ -80,7 +80,7 @@ const Home = () => {
   ];
 
   const loading = false;
-  const whatsappNumber = "8511624907";
+  const whatsappNumber = "9714092106";
 
   const categories = [
     {

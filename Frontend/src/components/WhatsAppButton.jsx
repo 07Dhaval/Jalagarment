@@ -5,7 +5,7 @@ import './WhatsAppButton.css';
 
 const WhatsAppButton = ({ product, variant = 'float' }) => {
     const { settings } = useContext(ProductContext);
-    const phoneNumber = settings?.whatsappNumber || '9313029938';
+    const phoneNumber = settings?.whatsappNumber || '9714092106';
 
 
     const getWhatsAppUrl = () => {
