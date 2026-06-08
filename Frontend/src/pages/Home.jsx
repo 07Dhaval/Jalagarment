@@ -133,7 +133,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-bg">
-          <img src="/assets/herobanner.png" alt="Premium Garment Showcase" />
+          <img src="/assets/banner1.png" alt="Premium Garment Showcase" />
         </div>
         <div className="container hero-container">
           <motion.div
